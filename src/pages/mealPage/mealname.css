@@ -1,0 +1,168 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 8%;
+    background-color: #CE0505;
+}
+
+header .logo {
+    font-size: 30px;
+    color: #CE0505;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0.2rem .8rem;
+    font-weight: 600;
+}
+
+header .auth span {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.new {
+    border: 1px solid #fff;
+    padding: .5rem;
+}
+
+.main {
+    padding: 1rem 8%;
+}
+
+.container {
+    padding: .5rem 8%;
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: 1fr 1fr .2fr;
+    grid-template-areas: "filter card-1" "filter card-2" "filter page";
+    grid-gap: 1.5rem;
+}
+
+.container .meal_filters {
+    grid-area: filter;
+    box-shadow: .5px .5px .25rem rgba(0, 0, 0, .6);
+    border-radius: .18rem;
+    padding: 1rem 1.1rem;
+}
+
+.container .card-1 {
+    grid-area: card-1;
+    box-shadow: .5px .5px .25rem rgba(0, 0, 0, .6);
+    border-radius: .18rem;
+    padding: .7rem;
+}
+
+.container .card-2 {
+    grid-area: card-2;
+    box-shadow: .5px .5px .25rem rgba(0, 0, 0, .6);
+    border-radius: .18rem;
+    padding: .7rem;
+}
+
+.container .pagination {
+    grid-area: page;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+
+h3 {
+    color: #192F60;
+    font-size: 18px;
+}
+
+.location {
+    margin: .7rem 0;
+}
+
+.location #dropdown {
+    border: 1px solid #aaa;
+    width: 90%;
+    padding: 0 .3rem;
+    color: #aaa;
+}
+
+p {
+    color: #192F60;
+    margin-top: .9rem;
+}
+
+label {
+    color: #8C96AB;
+    font-size: 14px;
+}
+
+form {
+    padding: 0 .2rem;
+    margin: .5rem 0;
+}
+
+.card-x img {
+    height: 120px;
+    width: 120px;
+    border-radius: 1rem;
+    object-fit: cover;
+
+}
+
+.card-x {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem !important;
+}
+
+h4 {
+    margin-top: .6rem;
+    color: #192F60;
+}
+
+.card-x .top {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.card-x .bottom {
+    display: flex;
+    gap: 2rem;
+}
+
+.pagination p {
+    border: 1px solid #8C96AB;
+    color: #8C96AB;
+    padding: .1rem .5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:860px) {
+    html {
+        font-size: 60%;
+    }
+
+    header .logo {
+        font-size: 2.6rem;
+    }
+
+    .card-x img {
+        height: 12rem;
+        width: 12rem;
+
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+
+}

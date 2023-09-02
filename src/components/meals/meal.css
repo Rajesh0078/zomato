@@ -1,0 +1,92 @@
+.meal_container {
+    padding: 2rem 10%;
+}
+
+
+.cards_container {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.cards_container a {
+    width: calc(100% / 3 - 1rem);
+}
+
+.card {
+
+    display: flex;
+    box-shadow: 1px 1px 1rem #00000029;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.card img {
+    width: 160px;
+    height: 160px;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 1rem;
+}
+
+p {
+    color: #8C96AB;
+    font-size: 14px;
+}
+
+h2 {
+    color: #192F60;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .cards_container a {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .cards_container {
+        gap: 2rem;
+    }
+
+    .card img {
+        max-width: 14rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:590px) {
+    .cards_container a {
+        width: calc(100% / 1 - 1rem)
+    }
+}
+
+@media screen and (max-width:462px) {
+    .cards_container a {
+        width: calc(100% / 1 - 1rem)
+    }
+
+    .cards_container {
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .card img {
+        max-width: 15rem;
+    }
+}
