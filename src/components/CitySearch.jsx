@@ -10,11 +10,10 @@ const CitySearch = () => {
     const [resValue, setResValue] = useState("")
 
     useEffect(() => {
-        axios.get('https://zomato-backend-sm8l.onrender.com').then((res) => {
+        axios.post('https://zomato-backend-sm8l.onrender.com/').then((res) => {
             setRestaurants(res.data)
         })
     }, [restaurants])
-
     const locationHandler = (e) => {
         setLocValue(e.target.value)
         let data = restaurants.filter((item) => {
